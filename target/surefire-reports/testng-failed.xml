@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="org.example.testCases.OrangeHRMTest">
+        <methods>
+          <include name="postTest"/>
+          <include name="LaunchApp"/>
+          <include name="flush"/>
+          <include name="reportConfig"/>
+          <include name="regression_login"/>
+          <include name="regression_login_invalid"/>
+          <include name="regression_dashboardValidate"/>
+        </methods>
+      </class> <!-- org.example.testCases.OrangeHRMTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

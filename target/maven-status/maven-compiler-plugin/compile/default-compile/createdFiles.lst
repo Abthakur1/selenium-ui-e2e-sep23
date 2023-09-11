@@ -1,0 +1,6 @@
+org\example\pageObjects\OrangeHRM\DashboardPg.class
+org\example\ReusableMethods\AbstractComponents.class
+org\example\pageObjects\LoginPg.class
+org\example\pageObjects\OrangeHRM\LoginPg.class
+org\example\pageObjects\LandingPage.class
+org\example\pageObjects\BrowserStackHomePg.class
