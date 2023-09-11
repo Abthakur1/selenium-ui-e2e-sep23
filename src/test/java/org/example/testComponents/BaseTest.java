@@ -44,6 +44,11 @@ public class BaseTest {
             driver = new ChromeDriver();
         else if (browserName.equals("edge"))
             driver = new EdgeDriver();
+        else if(browserName.equals("headless")) {
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless");
+            driver = new ChromeDriver(options);
+        }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
         return driver;
