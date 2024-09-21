@@ -4,12 +4,9 @@
     <listeners>
         <listener class-name="org.example.testComponents.Listeners"></listener>
     </listeners>
-    <test name="E2E Test" >
+    <test name="E2E Test QA App" >
         <classes>
-            <class name="org.example.testCases.OrangeHRMTest">
-            <methods>
-                <include name="regression_dashboardValidate"/>
-            </methods>
+            <class name="org.example.testCases.QaPracticeTest">
             </class>
         </classes>
     </test>

@@ -1,10 +1,14 @@
 package org.example.testComponents;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -28,18 +32,8 @@ public class BaseTest {
             System.out.println(e.getMessage());
         }
 
-        String browserName = System.getProperty("browser")!=null?  System.getProperty("browser"): prop.getProperty("browser");
-        String env= System.getProperty("env")!=null? System.getProperty("env"): "qa";
-        if(env.equals("dev"))
-            url = prop.getProperty("devUrl");
-        else if(env.equals("qa"))
-            url = prop.getProperty("qaUrl");
-        else if(env.equals("uat"))
-            url = prop.getProperty("uatUrl");
-        else
+        String browserName = prop.getProperty("browser");
             url = prop.getProperty("url");
-        //ChromeOptions options = new ChromeOptions();
-       // options.addArguments("headless");
         if (browserName.equals("chrome"))
             driver = new ChromeDriver();
         else if (browserName.equals("edge"))
@@ -56,7 +50,22 @@ public class BaseTest {
     }
 
     public void launchApp() {
-//        driver = initializeDriver();
         driver.get(this.url);
+    }
+
+    public void captureScreenshot(String localPathOfScreenshot){
+        TakesScreenshot screenshot = (TakesScreenshot)driver;
+        File source = screenshot.getScreenshotAs(OutputType.FILE);
+        File destination = new File(localPathOfScreenshot);
+        try {
+            FileUtils.copyFile(source,destination);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
