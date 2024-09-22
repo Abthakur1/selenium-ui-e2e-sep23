@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="selenium-ui-e2e-sep23" />
         <module name="SeleniumFrameworkPractice2023" />
       </profile>
     </annotationProcessing>
