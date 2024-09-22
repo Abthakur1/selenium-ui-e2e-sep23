@@ -1,6 +1,4 @@
 org\example\testComponents\ExtentReportsTest.class
 org\example\testComponents\BaseTest.class
-org\example\TestSample1.class
-org\example\testCases\OrangeHRMTest.class
-org\example\testCases\TestBrowserStack.class
+org\example\testCases\QaPracticeTest.class
 org\example\testComponents\Listeners.class

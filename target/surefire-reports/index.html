@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +103,12 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="org.example.testCases.OrangeHRMTest" class="method navigator-link" hash-for-method="regression_dashboardValidate">regression_dashboardValidate</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="org.example.testCases.QaPracticeTest" class="method navigator-link" hash-for-method="login_negative">login_negative</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="org.example.testCases.OrangeHRMTest" class="method navigator-link" hash-for-method="regression_login">regression_login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="org.example.testCases.OrangeHRMTest" class="method navigator-link" hash-for-method="regression_login_invalid">regression_login_invalid</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="org.example.testCases.QaPracticeTest" class="method navigator-link" hash-for-method="login_positive">login_positive</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -131,28 +126,21 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.example.testCases.OrangeHRMTest</span>
+              <span class="class-name">org.example.testCases.QaPracticeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="regression_dashboardValidate">
-                  </a> <!-- regression_dashboardValidate -->
-                  <span class="method-name">regression_dashboardValidate</span>
+                  <a name="login_negative">
+                  </a> <!-- login_negative -->
+                  <span class="method-name">login_negative</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="regression_login">
-                  </a> <!-- regression_login -->
-                  <span class="method-name">regression_login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="regression_login_invalid">
-                  </a> <!-- regression_login_invalid -->
-                  <span class="method-name">regression_login_invalid</span>
+                  <a name="login_positive">
+                  </a> <!-- login_positive -->
+                  <span class="method-name">login_positive</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -168,11 +156,9 @@
 &lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.example.testCases.OrangeHRMTest&quot;/&gt;
-      &lt;class name=&quot;org.example.testCases.TestBrowserStack&quot;/&gt;
+      &lt;class name=&quot;org.example.testCases.QaPracticeTest&quot;/&gt;
       &lt;class name=&quot;org.example.testComponents.BaseTest&quot;/&gt;
       &lt;class name=&quot;org.example.testComponents.ExtentReportsTest&quot;/&gt;
-      &lt;class name=&quot;org.example.TestSample1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -186,7 +172,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (5 classes)</span>
+                <span class="test-name">Surefire test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,19 +198,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'regression_dashboardValidate')
-data.setCell(0, 2, 'org.example.testCases.OrangeHRMTest')
-data.setCell(0, 3, 9601);
+data.setCell(0, 1, 'login_negative')
+data.setCell(0, 2, 'org.example.testCases.QaPracticeTest')
+data.setCell(0, 3, 8109);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'regression_login_invalid')
-data.setCell(1, 2, 'org.example.testCases.OrangeHRMTest')
-data.setCell(1, 3, 2540);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'regression_login')
-data.setCell(2, 2, 'org.example.testCases.OrangeHRMTest')
-data.setCell(2, 3, 2105);
+data.setCell(1, 1, 'login_positive')
+data.setCell(1, 2, 'org.example.testCases.QaPracticeTest')
+data.setCell(1, 3, 6659);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
@@ -244,16 +226,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">org.example.testCases.TestBrowserStack</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">browserStackCoreFeatures</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Surefire_suite" class="panel">
@@ -262,50 +237,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.example.testCases.OrangeHRMTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.example.testCases.QaPracticeTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">reportConfig</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchApp</span>
-                <span class="method-start">440 ms</span>
+                <span class="method-start">286 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">regression_dashboardValidate</span>
-                <span class="method-start">10759 ms</span>
+                <span class="method-name">login_negative</span>
+                <span class="method-start">4612 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postTest</span>
-                <span class="method-start">20367 ms</span>
+                <span class="method-start">12721 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchApp</span>
-                <span class="method-start">20575 ms</span>
+                <span class="method-start">12881 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">regression_login</span>
-                <span class="method-start">27804 ms</span>
+                <span class="method-name">login_positive</span>
+                <span class="method-start">15695 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postTest</span>
-                <span class="method-start">29912 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">LaunchApp</span>
-                <span class="method-start">30195 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">regression_login_invalid</span>
-                <span class="method-start">36784 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postTest</span>
-                <span class="method-start">39324 ms</span>
+                <span class="method-start">22354 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">flush</span>
-                <span class="method-start">39418 ms</span>
+                <span class="method-start">22572 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

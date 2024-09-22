@@ -1,6 +1,3 @@
-org\example\pageObjects\OrangeHRM\DashboardPg.class
+org\example\pageObjects\QApracticeApp\HomePg.class
+org\example\pageObjects\QApracticeApp\ShoppingCartPage.class
 org\example\ReusableMethods\AbstractComponents.class
-org\example\pageObjects\LoginPg.class
-org\example\pageObjects\OrangeHRM\LoginPg.class
-org\example\pageObjects\LandingPage.class
-org\example\pageObjects\BrowserStackHomePg.class
